@@ -13,15 +13,9 @@ Example Output
 import { test } from "@/test.ts";
 
 function openOrSenior(data: number[][]): string[] {
-	return data.map((player) => {
-		const age = player[0];
-		const handicap = player[1];
-		if (age! >= 55 && handicap! > 7) {
-			return "Senior";
-		} else {
-			return "Open";
-		}
-	});
+	return data.map(([age, handicap]) =>
+		age! >= 55 && handicap! > 7 ? "Senior" : "Open",
+	);
 }
 
 test(
