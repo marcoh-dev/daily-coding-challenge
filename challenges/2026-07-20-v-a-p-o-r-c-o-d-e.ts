@@ -4,7 +4,7 @@
 import { test } from "@/test.ts";
 
 function vaporcode(s: string): string {
-	return s.replace(" ", "").toUpperCase().split("").join("  ");
+	return s.replaceAll(" ", "").toUpperCase().split("").join("  ");
 }
 
 test(vaporcode("Vaporwave"), "V  A  P  O  R  W  A  V  E");
