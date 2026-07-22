@@ -1,14 +1,11 @@
 {
-  "4kyu": [],
-  "5kyu": [],
-  "6kyu": [
-    "stop-gninnips-my-sdrow!",
-    "find-the-parity-outlier"
-  ],
-  "7kyu": [
-    "maximum-triplet-sum",
-    "find-the-next-perfect-square",
-    "v-a-p-o-r-c-o-d-e"
-  ],
-  "8kyu": []
+	"4kyu": [],
+	"5kyu": [],
+	"6kyu": ["find-the-parity-outlier", "unique-in-order"],
+	"7kyu": [
+		"maximum-triplet-sum",
+		"find-the-next-perfect-square",
+		"v-a-p-o-r-c-o-d-e"
+	],
+	"8kyu": []
 }
