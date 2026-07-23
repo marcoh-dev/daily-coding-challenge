@@ -6,7 +6,8 @@
     "unique-in-order",
     "json.parse-date-reviver",
     "multiplication-table",
-    "array.diff"
+    "array.diff",
+    "new-cashier"
   ],
   "7kyu": [
     "maximum-triplet-sum",
