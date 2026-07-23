@@ -4,13 +4,15 @@
   "6kyu": [
     "find-the-parity-outlier",
     "unique-in-order",
-    "json.parse-date-reviver"
+    "json.parse-date-reviver",
+    "multiplication-table"
   ],
   "7kyu": [
     "maximum-triplet-sum",
     "find-the-next-perfect-square",
     "v-a-p-o-r-c-o-d-e",
-    "form-the-minimum"
+    "form-the-minimum",
+    "the-reject()-function"
   ],
   "8kyu": []
 }
