@@ -14,7 +14,7 @@ function growingPlant(
 	downSpeed: number,
 	desiredHeight: number,
 ): number {
-	if (downSpeed >= upSpeed) return Infinity;
+	if (downSpeed >= upSpeed || desiredHeight < 0) return Infinity;
 	let day: number = 1;
 	let currentHeight: number = 0;
 	while (currentHeight < desiredHeight) {
