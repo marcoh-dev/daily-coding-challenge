@@ -7,7 +7,8 @@
     "json.parse-date-reviver",
     "multiplication-table",
     "array.diff",
-    "new-cashier"
+    "new-cashier",
+    "more-zeros-than-ones"
   ],
   "7kyu": [
     "maximum-triplet-sum",
