@@ -8,7 +8,8 @@
     "multiplication-table",
     "array.diff",
     "new-cashier",
-    "more-zeros-than-ones"
+    "more-zeros-than-ones",
+    "string-subpattern-recognition-i"
   ],
   "7kyu": [
     "maximum-triplet-sum",
