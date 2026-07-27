@@ -14,7 +14,8 @@
     "break-camelcase",
     "build-tower",
     "the-lamp-revisited",
-    "string-transformer"
+    "string-transformer",
+    "character-with-longest-consecutive-repetition"
   ],
   "7kyu": [
     "maximum-triplet-sum",
