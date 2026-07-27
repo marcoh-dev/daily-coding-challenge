@@ -13,7 +13,8 @@
     "stop-gninnips-my-sdrow!",
     "break-camelcase",
     "build-tower",
-    "the-lamp-revisited"
+    "the-lamp-revisited",
+    "string-transformer"
   ],
   "7kyu": [
     "maximum-triplet-sum",
