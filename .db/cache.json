@@ -10,7 +10,8 @@
     "new-cashier",
     "more-zeros-than-ones",
     "string-subpattern-recognition-i",
-    "stop-gninnips-my-sdrow!"
+    "stop-gninnips-my-sdrow!",
+    "break-camelcase"
   ],
   "7kyu": [
     "maximum-triplet-sum",
