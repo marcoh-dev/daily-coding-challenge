@@ -7,12 +7,16 @@ array_diff([1,2],[1]) == [2]
 import { test } from "@/test.ts";
 
 function array_diff(a: number[], b: number[]): number[] {
+	/*
 	let cleanedList = a;
 	b.forEach((bNum) => {
 		cleanedList = cleanedList.filter((aNum) => aNum !== bNum);
 	});
 
 	return cleanedList;
+	*/
+	const bSet = new Set(b);
+	return a.filter((aNum) => !bSet.has(aNum));
 }
 
 test(array_diff([1, 2], [1]), [2]);
