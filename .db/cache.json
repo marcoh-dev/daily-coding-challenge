@@ -15,7 +15,8 @@
     "build-tower",
     "the-lamp-revisited",
     "string-transformer",
-    "character-with-longest-consecutive-repetition"
+    "character-with-longest-consecutive-repetition",
+    "does-my-number-look-big-in-this"
   ],
   "7kyu": [
     "maximum-triplet-sum",
