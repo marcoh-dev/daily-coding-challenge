@@ -28,7 +28,8 @@
     "maximum-length-difference",
     "maximum-gap",
     "you're-a-square!",
-    "string-merge!"
+    "string-merge!",
+    "pluck"
   ],
   "8kyu": []
 }
