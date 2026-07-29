@@ -30,7 +30,10 @@
     "maximum-gap",
     "you're-a-square!",
     "string-merge!",
-    "pluck"
+    "pluck",
+    "simple-remove-duplicates",
+    "sum-of-array-singles",
+    "the-office-i-outed"
   ],
   "8kyu": []
 }
