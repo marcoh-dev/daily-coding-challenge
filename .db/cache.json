@@ -16,7 +16,8 @@
     "the-lamp-revisited",
     "string-transformer",
     "character-with-longest-consecutive-repetition",
-    "does-my-number-look-big-in-this"
+    "does-my-number-look-big-in-this",
+    "count-letters-in-string"
   ],
   "7kyu": [
     "maximum-triplet-sum",
