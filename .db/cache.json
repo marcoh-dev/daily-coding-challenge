@@ -18,7 +18,8 @@
     "character-with-longest-consecutive-repetition",
     "does-my-number-look-big-in-this",
     "count-letters-in-string",
-    "convert-string-to-camel-case"
+    "convert-string-to-camel-case",
+    "your-order,-please"
   ],
   "7kyu": [
     "maximum-triplet-sum",
