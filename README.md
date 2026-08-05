@@ -18,12 +18,13 @@ To get a new challenge, run:
 npm run next
 ```
 
-You can specify the difficulty or kyu level (8 is simple, 4 is hard):
+You can specify the difficulty or kyu level (8 is simple, 4 is hard - any could get you any kind of difficulty):
 
 ```bash
 npm run next easy
 npm run next {4,5,6,7,8}
 npm run next hard
+npm run next any
 ```
 
 To get the solution for a given challenge, run:

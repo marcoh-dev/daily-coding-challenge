@@ -1,6 +1,8 @@
 {
   "4kyu": [],
-  "5kyu": [],
+  "5kyu": [
+    "string-incrementer"
+  ],
   "6kyu": [
     "find-the-parity-outlier",
     "unique-in-order",
@@ -19,7 +21,11 @@
     "does-my-number-look-big-in-this",
     "count-letters-in-string",
     "convert-string-to-camel-case",
-    "your-order,-please"
+    "your-order,-please",
+    "find-the-unique-number",
+    "prefill-an-array",
+    "are-they-the-same",
+    "multiples-of-3-or-5"
   ],
   "7kyu": [
     "maximum-triplet-sum",
@@ -38,7 +44,17 @@
     "sum-of-array-singles",
     "the-office-i-outed",
     "sum-of-all-multiples-of-3-or-5",
-    "most-digits"
+    "most-digits",
+    "predict-your-age!",
+    "growth-of-a-population",
+    "highest-and-lowest",
+    "reverse-a-number",
+    "club-doorman",
+    "exehs-and-ohs",
+    "minimum-steps",
+    "odd-ones-out"
   ],
-  "8kyu": []
+  "8kyu": [
+    "how-many-stairs-will-suzuki-climb-in-20-years"
+  ]
 }
