@@ -1,7 +1,8 @@
 {
   "4kyu": [],
   "5kyu": [
-    "string-incrementer"
+    "string-incrementer",
+    "pete-the-baker"
   ],
   "6kyu": [
     "find-the-parity-outlier",
@@ -52,9 +53,12 @@
     "club-doorman",
     "exehs-and-ohs",
     "minimum-steps",
-    "odd-ones-out"
+    "odd-ones-out",
+    "double-sort"
   ],
   "8kyu": [
-    "how-many-stairs-will-suzuki-climb-in-20-years"
+    "how-many-stairs-will-suzuki-climb-in-20-years",
+    "sum-of-positive",
+    "gravity-flip"
   ]
 }
