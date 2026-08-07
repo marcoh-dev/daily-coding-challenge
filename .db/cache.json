@@ -26,7 +26,8 @@
     "find-the-unique-number",
     "prefill-an-array",
     "are-they-the-same",
-    "multiples-of-3-or-5"
+    "multiples-of-3-or-5",
+    "the-supermarket-queue"
   ],
   "7kyu": [
     "maximum-triplet-sum",
@@ -59,6 +60,7 @@
   "8kyu": [
     "how-many-stairs-will-suzuki-climb-in-20-years",
     "sum-of-positive",
-    "gravity-flip"
+    "gravity-flip",
+    "keep-hydrated"
   ]
 }
