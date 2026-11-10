@@ -30,12 +30,12 @@ Code Examples
 
 import { test } from "@/test.ts";
 
-function prefill(n: number | string | boolean, v?: any): any[] {
+function prefill(n: number | string | boolean, v?: unknown): unknown[] {
 	if ((typeof n !== "number" && typeof n !== "string") || Number(n) < 0) {
 		throw new TypeError(`${n} is invalid`);
 	}
 
-	return Array(n).fill(v);
+	return Array<unknown>(n).fill(v);
 }
 
 test(prefill(3, 1), [1, 1, 1]);

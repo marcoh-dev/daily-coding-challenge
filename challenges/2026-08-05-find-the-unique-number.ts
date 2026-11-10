@@ -8,9 +8,7 @@ import { test } from "@/test.ts";
 
 function findUniq(a: number[]): number | undefined {
 	const uniques = [...new Set(a)];
-	return a.filter((char) => char === uniques[0]).length === 1
-		? uniques[0]
-		: uniques[1];
+	return a.filter((char) => char === uniques[0]).length === 1 ? uniques[0] : uniques[1];
 }
 
 test(findUniq([1, 1, 1, 2, 1, 1]), 2);

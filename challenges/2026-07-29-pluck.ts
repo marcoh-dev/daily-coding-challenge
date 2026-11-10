@@ -12,7 +12,7 @@ If an object is missing the property, you should just leave it as undefined/None
 import { test } from "@/test.ts";
 
 function pluck(objs: Record<string, unknown>[], name: string): unknown[] {
-	return objs.map((obj) => (obj.hasOwnProperty(name) ? obj[name] : undefined));
+	return objs.map((obj) => (Object.hasOwn(obj, name) ? obj[name] : undefined));
 }
 
 test(pluck([{ a: 1 }, { a: 2 }], "a"), [1, 2]);

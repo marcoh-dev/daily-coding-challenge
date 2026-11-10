@@ -26,9 +26,7 @@ function longestRepetition(s: string): [string, number] {
 		}
 	});
 
-	return newCounter > savedCounter
-		? [newLetter, newCounter]
-		: [savedLetter, savedCounter];
+	return newCounter > savedCounter ? [newLetter, newCounter] : [savedLetter, savedCounter];
 }
 
 test(longestRepetition("aaabbbbbcccc"), ["b", 5]);

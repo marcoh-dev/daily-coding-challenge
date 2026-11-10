@@ -1,25 +1,42 @@
 {
-  "name": "daily-challenge",
-  "module": "src/index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/node": "^25.6.0",
-    "tsx": "^4.23.15",
-    "typescript": "~6.0.3"
-  },
-  "scripts": {
-    "next": "tsx src/index.ts",
-    "solution": "tsx src/solution.ts",
-    "reset": "tsx src/reset.ts",
-    "typecheck": "tsc --noEmit"
-  },
-  "packageManager": "pnpm@12.18.0",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^12.18.0",
-      "onFail": "download"
-    }
-  }
+	"name": "daily-challenge",
+	"module": "src/index.ts",
+	"type": "module",
+	"private": true,
+	"devDependencies": {
+		"@eslint/js": "^9.39.5",
+		"@types/node": "^25.6.0",
+		"eslint": "^9.39.5",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-import": "^2.32.0",
+		"globals": "^17.14.0",
+		"prettier": "^3.9.10",
+		"tsx": "^4.23.15",
+		"typescript": "~6.0.3",
+		"typescript-eslint": "^8.72.2"
+	},
+	"scripts": {
+		"next": "tsx src/index.ts",
+		"solution": "tsx src/solution.ts",
+		"reset": "tsx src/reset.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"check": "pnpm lint && pnpm format:check && pnpm typecheck",
+		"sync": "git switch main && git pull && pnpm install",
+		"sync:branch": "git fetch origin && git merge --no-commit origin/main && pnpm install"
+	},
+	"packageManager": "pnpm@12.18.0",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "^12.18.0",
+			"onFail": "download"
+		}
+	},
+	"engines": {
+		"node": "24.x"
+	}
 }

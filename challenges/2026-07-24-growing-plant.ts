@@ -9,11 +9,7 @@ For upSpeed = 10, downSpeed = 9 and desiredHeight = 4, the output should be 1.
 
 import { test } from "@/test.ts";
 
-function growingPlant(
-	upSpeed: number,
-	downSpeed: number,
-	desiredHeight: number,
-): number {
+function growingPlant(upSpeed: number, downSpeed: number, desiredHeight: number): number {
 	if (downSpeed >= upSpeed || desiredHeight < 0) return Infinity;
 	let day: number = 1;
 	let currentHeight: number = 0;

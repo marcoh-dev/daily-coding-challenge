@@ -20,16 +20,11 @@ function outed(meet: Record<string, number>, boss: string): string {
 		(acc, [name, mood]) => (String(name) === boss ? acc + mood * 2 : acc + mood),
 		0,
 	);
-	return totalMood / Object.entries(meet).length <= 5
-		? "Get Out Now!"
-		: "Nice Work Champ!";
+	return totalMood / Object.entries(meet).length <= 5 ? "Get Out Now!" : "Nice Work Champ!";
 }
 
 test(outed({ Tom: 3, Dick: 3, Harry: 3, Stuart: 3 }, "Stuart"), "Get Out Now!");
-test(
-	outed({ Tom: 10, Dick: 10, Harry: 10, Stuart: 10 }, "Stuart"),
-	"Nice Work Champ!",
-);
+test(outed({ Tom: 10, Dick: 10, Harry: 10, Stuart: 10 }, "Stuart"), "Nice Work Champ!");
 test(outed({ Alice: 5, Bob: 5 }, "Alice"), "Nice Work Champ!");
 test(outed({ Alice: 1, Bob: 1 }, "Alice"), "Get Out Now!");
 test(outed({ Ana: 2, Ben: 6, Carl: 3 }, "Ben"), "Nice Work Champ!");

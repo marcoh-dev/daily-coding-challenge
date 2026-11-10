@@ -1,9 +1,10 @@
-import { readFile, writeFile, readdir } from "node:fs/promises";
-import _cache from "../.db/cache.json" with { type: "json" };
-const cache = _cache as Record<Kyu, string[]>;
-
-import path from "node:path";
 import { mkdirSync, readdirSync } from "node:fs";
+import { readdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+
+import _cache from "@db/cache.json" with { type: "json" };
+
+const cache = _cache as Record<Kyu, string[]>;
 
 const CHALLENGES_DIR = ".db/challenges";
 const OUTPUT_DIR = "challenges";
@@ -48,9 +49,7 @@ async function main() {
 	const picked = cache[kyu];
 
 	const allFiles = (await readdir(kyuDir)).filter((file) => file.endsWith(".ts"));
-	const files = allFiles.filter(
-		(file) => !picked.includes(path.basename(file, ".ts")),
-	);
+	const files = allFiles.filter((file) => !picked.includes(path.basename(file, ".ts")));
 
 	if (files.length === 0) {
 		console.log(`No challenges left in ${kyu}.`);

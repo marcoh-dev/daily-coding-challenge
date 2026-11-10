@@ -10,10 +10,7 @@ import { test } from "@/test.ts";
 
 function narcissistic(value: number): boolean {
 	const numbersArray = [...String(value)].map(Number);
-	const narcSum = numbersArray.reduce(
-		(acc, curr) => acc + curr ** numbersArray.length,
-		0,
-	);
+	const narcSum = numbersArray.reduce((acc, curr) => acc + curr ** numbersArray.length, 0);
 	return value === narcSum;
 }
 

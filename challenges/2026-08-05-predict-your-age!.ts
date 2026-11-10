@@ -9,19 +9,8 @@
 
 import { test } from "@/test.ts";
 
-function predictAge(
-	age1: number,
-	age2: number,
-	age3: number,
-	age4: number,
-	age5: number,
-	age6: number,
-	age7: number,
-	age8: number,
-): number {
-	return Math.floor(
-		Math.sqrt([...arguments].reduce((acc, curr) => acc + curr ** 2, 0)) / 2,
-	);
+function predictAge(...ages: number[]): number {
+	return Math.floor(Math.sqrt(ages.reduce((acc, curr) => acc + curr ** 2, 0)) / 2);
 }
 
 test(predictAge(65, 60, 75, 55, 60, 63, 64, 45), 86);

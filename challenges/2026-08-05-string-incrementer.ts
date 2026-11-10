@@ -16,9 +16,8 @@ function incrementString(s: string): string {
 
 	const incrementedNumber = parseInt(numericString) + 1;
 	const updatedNumericString =
-		"0".repeat(
-			Math.max(0, numericString.length - String(incrementedNumber).length),
-		) + incrementedNumber;
+		"0".repeat(Math.max(0, numericString.length - String(incrementedNumber).length)) +
+		incrementedNumber;
 	return s.slice(0, -numericString.length) + updatedNumericString;
 }
 
