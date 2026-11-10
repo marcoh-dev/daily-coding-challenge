@@ -7,7 +7,7 @@ Practice your coding skills, one challenge per day.
 Install the dependencies:
 
 ```bash
-npm i
+pnpm install
 ```
 
 ## Usage
@@ -15,29 +15,29 @@ npm i
 To get a new challenge, run:
 
 ```bash
-npm run next
+pnpm next
 ```
 
 You can specify the difficulty or kyu level (8 is simple, 4 is hard - any could get you any kind of difficulty):
 
 ```bash
-npm run next easy
-npm run next {4,5,6,7,8}
-npm run next hard
-npm run next any
+pnpm next easy
+pnpm next {4,5,6,7,8}
+pnpm next hard
+pnpm next any
 ```
 
 To get the solution for a given challenge, run:
 
 ```bash
-npm run solution {challenge-name}
-npm run solution alphabetical-addition
+pnpm solution {challenge-name}
+pnpm solution alphabetical-addition
 ```
 
 Challenges can't be picked twice, to reset the cache, run:
 
 ```bash
-npm run reset
+pnpm reset
 ```
 
 Happy Hacking!
