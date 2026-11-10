@@ -31,7 +31,7 @@ function findOutlier(a: number[]): number {
 	console.log("outlierIsEven", outlierIsEven);
 	let outlierNumber: number = 0;
 
-	for (let num of a) {
+	for (const num of a) {
 		if (num % 2 === 0 && outlierIsEven) {
 			outlierNumber = num;
 			break;

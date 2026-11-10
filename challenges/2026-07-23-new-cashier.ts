@@ -37,7 +37,7 @@ function getOrder(s: string): string {
 
 	menuOrder.forEach((item) => {
 		const matches = s.match(new RegExp(item, "gi"));
-		matches && orderList.push(...Array(matches.length).fill(item));
+		if (matches) orderList.push(...Array(matches.length).fill(item));
 	});
 
 	return orderList.join(" ");

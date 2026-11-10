@@ -7,9 +7,7 @@ import { test } from "@/test.ts";
 
 function stringTransformer(s: string): string {
 	return [...s]
-		.map((char) =>
-			char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase(),
-		)
+		.map((char) => (char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase()))
 		.join("")
 		.split(" ")
 		.reverse()

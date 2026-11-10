@@ -18,19 +18,14 @@ import { test } from "@/test.ts";
 function cakes(r: Record<string, number>, a: Record<string, number>): number {
 	let lowest = Infinity;
 	for (const ingredient in r) {
-		lowest = a[ingredient]
-			? Math.min(lowest, Math.floor(a[ingredient] / r[ingredient]!))
-			: 0;
+		lowest = a[ingredient] ? Math.min(lowest, Math.floor(a[ingredient] / r[ingredient]!)) : 0;
 		if (lowest < 1) return 0;
 	}
 	return lowest;
 }
 
 test(
-	cakes(
-		{ flour: 500, sugar: 200, eggs: 1 },
-		{ flour: 1200, sugar: 1200, eggs: 5, milk: 200 },
-	),
+	cakes({ flour: 500, sugar: 200, eggs: 1 }, { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }),
 	2,
 );
 test(

@@ -11,9 +11,7 @@ function maxTriSum(a: number[]): number {
 	uniquesArray.sort(function (a, b) {
 		return b - a;
 	});
-	const trisum: number = uniquesArray
-		.slice(0, 3)
-		.reduce((total, current) => total + current, 0);
+	const trisum: number = uniquesArray.slice(0, 3).reduce((total, current) => total + current, 0);
 	return trisum;
 }
 

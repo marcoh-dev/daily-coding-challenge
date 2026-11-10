@@ -8,9 +8,9 @@
 
 import { test } from "@/test.ts";
 
-function uniqueInOrder(s: string | any[]): any[] {
+function uniqueInOrder<T>(s: string | T[]): (string | T)[] {
 	const items = typeof s === "string" ? s.split("") : s;
-	let uniqueItems: any[] = [];
+	const uniqueItems: (string | T)[] = [];
 
 	items.forEach((item) => {
 		if (uniqueItems.at(-1) !== item) {

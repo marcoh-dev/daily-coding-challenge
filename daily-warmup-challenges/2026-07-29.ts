@@ -66,13 +66,7 @@ test(
 	]).sort(),
 	["Mini Puzzle", "Toy Car"].sort(),
 );
-test(
-	guessGifts(wishlist, [{ size: "small", clatters: "no", weight: "light" }]),
-	["Card Game"],
-);
-test(
-	guessGifts(wishlist, [{ size: "large", clatters: "yes", weight: "heavy" }]),
-	[],
-);
+test(guessGifts(wishlist, [{ size: "small", clatters: "no", weight: "light" }]), ["Card Game"]);
+test(guessGifts(wishlist, [{ size: "large", clatters: "yes", weight: "heavy" }]), []);
 test(guessGifts([], [{ size: "small", clatters: "no", weight: "light" }]), []);
 test(guessGifts(wishlist, []).sort(), [].sort());

@@ -15,7 +15,7 @@ strings. If it is not a "date string", however, the original value should be ret
 
 import { test } from "@/test.ts";
 
-function JSON_Date_reviver(key: string, value: any): Date | any {
+function JSON_Date_reviver(key: string, value: unknown): unknown {
 	if (typeof value === "string") {
 		const date = new Date(value);
 
@@ -30,8 +30,5 @@ function JSON_Date_reviver(key: string, value: any): Date | any {
 test(JSON_Date_reviver("", "2014-01-01T23:28:56.782Z") instanceof Date, true);
 test(JSON_Date_reviver("", "hello"), "hello");
 test(JSON_Date_reviver("", 42), 42);
-test(
-	JSON_Date_reviver("date", "2023-06-15T10:00:00.000Z") instanceof Date,
-	true,
-);
+test(JSON_Date_reviver("date", "2023-06-15T10:00:00.000Z") instanceof Date, true);
 test(JSON_Date_reviver("", null), null);

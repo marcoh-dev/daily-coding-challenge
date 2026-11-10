@@ -21,10 +21,10 @@ function sumIntervals(a: [number, number][]): number {
 	if (a.length === 0) return 0;
 
 	const intervals = [...a].sort((a, b) => a[0] - b[0]);
-	let nonOverlapIntervals: [number, number][] = [];
+	const nonOverlapIntervals: [number, number][] = [];
 
 	for (const current of intervals) {
-		let saved = nonOverlapIntervals.at(-1);
+		const saved = nonOverlapIntervals.at(-1);
 
 		if (saved && current[0] < saved[1]) {
 			if (current[1] > saved[1]) {
