@@ -12,9 +12,6 @@
     "solution": "tsx src/solution.ts",
     "reset": "tsx src/reset.ts"
   },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
   "packageManager": "pnpm@12.18.0",
   "devEngines": {
     "packageManager": {
