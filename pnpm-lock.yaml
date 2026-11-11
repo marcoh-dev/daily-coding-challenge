@@ -170,8 +170,8 @@ importers:
         specifier: ^9.39.5
         version: 9.39.5
       '@types/node':
-        specifier: ^25.6.0
-        version: 25.9.9
+        specifier: ^24.19.2
+        version: 24.19.2
       eslint:
         specifier: ^9.39.5
         version: 9.39.5(supports-color@7.2.0)
@@ -425,8 +425,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@25.9.9':
-    resolution: {integrity: sha512-b4e2xxj/yMeT2hNlD6x7zNFiQK2Dlmkb9CQ6v3/1G2RezKN4YS2lcEv8lzGm1mhs4f2lM4yNAMI/zUDBZBBt7w==}
+  '@types/node@24.19.2':
+    resolution: {integrity: sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ==}
 
   '@typescript-eslint/eslint-plugin@8.72.2':
     resolution: {integrity: sha512-222PKFXKihmFpi/pS5njoBgdAqsPhj2/GBmFbrNw8Tq8gEG9Sv+kSlKFy4u2q+mJv9ZzJgM2Gkv/bUzRZwZw5g==}
@@ -1484,7 +1484,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@25.9.9':
+  '@types/node@24.19.2':
     dependencies:
       undici-types: 7.24.6
 
